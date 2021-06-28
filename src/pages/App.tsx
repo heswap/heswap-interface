@@ -12,7 +12,7 @@ import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
 import Swap from './Swap'
 import { RedirectPathToSwapOnly } from './Swap/redirects'
-import { EN, allLanguages } from '../constants/localisation/languageCodes'
+import { EN, languageList } from '../constants/localization/languages'
 import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
 
@@ -74,7 +74,7 @@ export default function App() {
   const stringTranslationsApi = new StringTranslations(credentials)
 
   const getStoredLang = (storedLangCode: string) => {
-    return allLanguages.filter((language) => {
+    return languageList.filter((language) => {
       return language.code === storedLangCode
     })[0]
   }

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import { Menu as UikitMenu, ConnectorId } from '@pancakeswap-libs/uikit'
+import { Menu as UikitMenu, ConnectorNames } from '@heswap/uikit'
 import { useWeb3React } from '@web3-react/core'
-import { allLanguages } from 'constants/localisation/languageCodes'
+import { languageList } from 'constants/localization/languages'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useTheme from 'hooks/useTheme'
 import useGetPriceData from 'hooks/useGetPriceData'
@@ -21,7 +21,7 @@ const Menu: React.FC = (props) => {
     <UikitMenu
       links={links}
       account={account as string}
-      login={(connectorId: ConnectorId) => {
+      login={(connectorId: ConnectorNames) => {
         if (connectorId === 'walletconnect') {
           return activate(walletconnect)
         }
@@ -36,7 +36,7 @@ const Menu: React.FC = (props) => {
       isDark={isDark}
       toggleTheme={toggleTheme}
       currentLang={selectedLanguage?.code || ''}
-      langs={allLanguages}
+      langs={languageList}
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd}
       /* profile={profile} */
