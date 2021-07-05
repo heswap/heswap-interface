@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Menu as UikitMenu, ConnectorNames } from '@heswap/uikit'
+import { AppMenu, ConnectorNames } from '@heswap/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { languageList } from 'constants/localization/languages'
 import { LanguageContext } from 'hooks/LanguageContext'
@@ -18,7 +18,7 @@ const Menu: React.FC = (props) => {
   // const profile = useGetLocalProfile()
 
   return (
-    <UikitMenu
+    <AppMenu
       links={links}
       account={account as string}
       login={(connectorId: ConnectorNames) => {
