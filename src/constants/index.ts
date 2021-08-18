@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@heswap/heswap-sdk'
 
-export const ROUTER_ADDRESS = '0xCFC9dc417f2b4aE4805a12d47eb9B4e1A660831f'
+export const ROUTER_ADDRESS = '0xBAf547398d5377f4Da94808E8B47a394CcEf6230'
 
 // a list of tokens by chain
 type ChainTokenList = {

@@ -26,9 +26,9 @@
       "decimals": 18
     },
     {
-      "name": "Heswap Token",
-      "symbol": "HSW",
-      "address": "0x10658Fc030f90CFf7608b21eC522A29645D515a3",
+      "name": "LuckyChip Token",
+      "symbol": "LC",
+      "address": "0x8909BbBe374cF5158BEB18b1A8D5e93BC3e2C30F",
       "chainId": 97,
       "decimals": 18,
       "logoURI": "/images/coins/ETH.png"
